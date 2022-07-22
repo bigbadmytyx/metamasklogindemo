@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meta Mask login demo</title>
+        <meta charset="utf-8">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <!--Meta Mask app icon https://docs.metamask.io/guide/defining-your-icon.html-->
+        <link rel="shortcut icon" href="/android-chrome-512x512.png" />
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- BS CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="text-center">
+            <h1 class="py-2">Meta Mask login demo</h1>
+        </header>
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-sm-8 col-12">
+                    <h5>1. Is Meta Mask extension installed?</h5>
+                    <div id="installed" class="alert alert-success alert-danger d-none"></div>
+                </div>
+            </div>
+            <div id="connected-already-row" class="row justify-content-center d-none">
+                <div class="col-sm-8 col-12">
+                    <h5>2. Have your app already been connected to Meta Mask?</h5>
+                    <div id="connected-already" class="alert alert-success alert-danger d-none"></div>
+                </div>
+            </div>
+            <div id="connected-row" class="row justify-content-center d-none">
+                <div class="col-sm-8 col-12">
+                    <h5>3. Click button to connect. And follow instructions in Meta Mask Extension</h5>
+                    <a id="connect" class="btn btn-success btn-lg mb-3" href="#" onclick="connect()">Connect to Meta Mask</a>
+                    <div id="connected" class="alert alert-success alert-danger d-none"></div>
+                </div>
+            </div>
+        </div>
+        <script src="bundle.js"></script>
+    </body>
+</html>
