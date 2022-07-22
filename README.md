@@ -37,4 +37,5 @@ npm run serve-dev
 ## Useful links
 
 [Meta Mask API docs](https://docs.metamask.io/guide/#why-metamask)
+
 [Meta Mask API error codes](https://blog.logrocket.com/understanding-resolving-metamask-error-codes/)
